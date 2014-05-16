@@ -1,0 +1,453 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALL_OBJECTS	./Makefile	/^ALL_OBJECTS=\\$/;"	m
+ANGLE_TO_RADIAN	./include/gmath.h	12;"	d
+ARMADILLO_LDFLAGS	./Makefile	/^ARMADILLO_LDFLAGS = -larmadillo$/;"	m
+AddOrthRow	./src/lib/PDM.cpp	/^void AddOrthRow(cv::Mat &R)$/;"	f
+Align3Dto2DShapes	./src/lib/PDM.cpp	/^void Align3Dto2DShapes(double& scale,double& pitch,double& yaw,double& roll,$/;"	f
+ApplySimT	./src/lib/PDM.cpp	/^void PDM::ApplySimT(double a,double b,double tx,double ty,cv::Mat &pglobl)$/;"	f	class:PDM
+CAMERA_H	./include/camera.h	2;"	d
+CC	./Makefile	/^CC = g++$/;"	m
+CFLAGS	./Makefile	/^CFLAGS = -std=c++0x -g -Wall -DNDEBUG $/;"	m
+CLM	./include/FaceTracker/CLM.h	/^    CLM(){;}$/;"	f	class:FACETRACKER::CLM
+CLM	./include/FaceTracker/CLM.h	/^    CLM(PDM &s,cv::Mat &r, std::vector<cv::Mat> &c,$/;"	f	class:FACETRACKER::CLM
+CLM	./include/FaceTracker/CLM.h	/^    CLM(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::CLM
+CLM	./include/FaceTracker/CLM.h	/^  class CLM{$/;"	c	namespace:FACETRACKER
+CLM	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+CalcCoeff	./src/lib/PAW.cpp	/^void PAW::CalcCoeff()$/;"	f	class:PAW
+CalcJacob	./src/lib/PDM.cpp	/^void PDM::CalcJacob(cv::Mat &plocal,cv::Mat &pglobl,cv::Mat &Jacob)$/;"	f	class:PDM
+CalcParams	./src/lib/PDM.cpp	/^void PDM::CalcParams(cv::Mat &s,cv::Mat &plocal,cv::Mat &pglobl)$/;"	f	class:PDM
+CalcReferenceUpdate	./src/lib/PDM.cpp	/^void PDM::CalcReferenceUpdate(cv::Mat &dp,cv::Mat &plocal,cv::Mat &pglobl)$/;"	f	class:PDM
+CalcRigidJacob	./src/lib/PDM.cpp	/^void PDM::CalcRigidJacob(cv::Mat &plocal,cv::Mat &pglobl,cv::Mat &Jacob)$/;"	f	class:PDM
+CalcShape2D	./src/lib/PDM.cpp	/^void PDM::CalcShape2D(cv::Mat &s,cv::Mat &plocal,cv::Mat &pglobl)$/;"	f	class:PDM
+CalcShape3D	./src/lib/PDM.cpp	/^void PDM::CalcShape3D(cv::Mat &s,cv::Mat &plocal)$/;"	f	class:PDM
+CalcSimT	./src/lib/CLM.cpp	/^void CalcSimT(cv::Mat &src,cv::Mat &dst,$/;"	f
+Camera	./include/camera.h	/^    Camera():size(5),width(640),height(480){$/;"	f	class:Camera
+Camera	./include/camera.h	/^class Camera$/;"	c
+Check	./src/lib/FCheck.cpp	/^bool FCheck::Check(cv::Mat &im,cv::Mat &s)$/;"	f	class:FCheck
+Check	./src/lib/FCheck.cpp	/^bool MFCheck::Check(int idx,cv::Mat &im,cv::Mat &s)$/;"	f	class:MFCheck
+Clamp	./src/lib/PDM.cpp	/^void PDM::Clamp(cv::Mat &p,double c)$/;"	f	class:PDM
+Crop	./src/lib/PAW.cpp	/^void PAW::Crop(cv::Mat &src, cv::Mat &dst, cv::Mat &s)$/;"	f	class:PAW
+DEPENDENCY_FILES	./Makefile	/^DEPENDENCY_FILES=\\$/;"	m
+Detect	./src/lib/FDet.cpp	/^cv::Rect FDet::Detect(cv::Mat im)$/;"	f	class:FDet
+Euler2Rot	./src/lib/PDM.cpp	/^void Euler2Rot(cv::Mat &R,const double pitch,const double yaw,const double roll,$/;"	f
+Euler2Rot	./src/lib/PDM.cpp	/^void Euler2Rot(cv::Mat &R,cv::Mat &p,bool full = true)$/;"	f
+FACETRACKER	./include/FaceTracker/CLM.h	/^namespace FACETRACKER$/;"	n
+FACETRACKER	./include/FaceTracker/FCheck.h	/^namespace FACETRACKER$/;"	n
+FACETRACKER	./include/FaceTracker/FDet.h	/^namespace FACETRACKER$/;"	n
+FACETRACKER	./include/FaceTracker/IO.h	/^namespace FACETRACKER$/;"	n
+FACETRACKER	./include/FaceTracker/PAW.h	/^namespace FACETRACKER$/;"	n
+FACETRACKER	./include/FaceTracker/PDM.h	/^namespace FACETRACKER$/;"	n
+FACETRACKER	./include/FaceTracker/Patch.h	/^namespace FACETRACKER$/;"	n
+FACETRACKER	./include/FaceTracker/Tracker.h	/^namespace FACETRACKER$/;"	n
+FACETRACKER_H	./include/FaceTracker/faceTracker.h	4;"	d
+FCHECK	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+FCheck	./include/FaceTracker/FCheck.h	/^    FCheck(){;}$/;"	f	class:FACETRACKER::FCheck
+FCheck	./include/FaceTracker/FCheck.h	/^    FCheck(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::FCheck
+FCheck	./include/FaceTracker/FCheck.h	/^    FCheck(double b, cv::Mat &w, PAW &paw){this->Init(b,w,paw);}$/;"	f	class:FACETRACKER::FCheck
+FCheck	./include/FaceTracker/FCheck.h	/^  class FCheck{$/;"	c	namespace:FACETRACKER
+FDET	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+FDet	./include/FaceTracker/FDet.h	/^    FDet(){storage_=NULL;_cascade=NULL;}$/;"	f	class:FACETRACKER::FDet
+FDet	./include/FaceTracker/FDet.h	/^    FDet(const char*  cascFile,$/;"	f	class:FACETRACKER::FDet
+FDet	./include/FaceTracker/FDet.h	/^    FDet(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::FDet
+FDet	./include/FaceTracker/FDet.h	/^  class FDet{$/;"	c	namespace:FACETRACKER
+FRAMEREADER_H	./include/frameReader.h	6;"	d
+FRAME_H	./include/frame.h	2;"	d
+FRAME_HEIGHT	./include/frameReader.h	/^    const int FRAME_HEIGHT;$/;"	m	class:FrameReader
+FRAME_SIZE	./include/frameReader.h	/^    const int FRAME_SIZE;$/;"	m	class:FrameReader
+FRAME_WIDTH	./include/frameReader.h	/^    const int FRAME_WIDTH;$/;"	m	class:FrameReader
+FaceTracker	./include/FaceTracker/faceTracker.h	/^class FaceTracker$/;"	c
+FaceTracker	./src/lib/faceTracker.cpp	/^FaceTracker::FaceTracker()$/;"	f	class:FaceTracker
+Fit	./src/lib/CLM.cpp	/^void CLM::Fit(cv::Mat im, vector<int> &wSize,$/;"	f	class:CLM
+Frame	./include/frame.h	/^   Frame(int width, int height)$/;"	f	class:Frame
+Frame	./include/frame.h	/^class Frame$/;"	c
+FrameReader	./include/frameReader.h	/^    FrameReader(FILE *file):FRAME_WIDTH(640),FRAME_HEIGHT(240),FRAME_SIZE(640*240),f(file)$/;"	f	class:FrameReader
+FrameReader	./include/frameReader.h	/^class FrameReader$/;"	c
+FrameReset	./include/FaceTracker/Tracker.h	/^    inline void FrameReset(){_frame = -1;}$/;"	f	class:FACETRACKER::Tracker
+GLTOOLS_H	./include/ggltools.h	2;"	d
+GMATH_H	./include/gmath.h	2;"	d
+GMATH_ZERO	./include/gmath.h	13;"	d
+GMATRIX3D_H	./include/gmatrix3d.h	2;"	d
+GMatrix3d	./include/gmatrix3d.h	/^class GMatrix3d$/;"	c
+GMatrix3d	./src/lib/gmatrix3d.cpp	/^GMatrix3d::GMatrix3d()$/;"	f	class:GMatrix3d
+GMatrix3d	./src/lib/gmatrix3d.cpp	/^GMatrix3d::GMatrix3d(const GMatrix3d &m)$/;"	f	class:GMatrix3d
+GMatrix3d	./src/lib/gmatrix3d.cpp	/^GMatrix3d::GMatrix3d(const double *mMatrix)$/;"	f	class:GMatrix3d
+GPOINT3D_H	./include/gpoint3d.h	2;"	d
+GPoint3d	./include/gpoint3d.h	/^class GPoint3d$/;"	c
+GPoint3d	./src/lib/gpoint3d.cpp	/^GPoint3d::GPoint3d()$/;"	f	class:GPoint3d
+GPoint3d	./src/lib/gpoint3d.cpp	/^GPoint3d::GPoint3d(const GPoint3d &v)$/;"	f	class:GPoint3d
+GPoint3d	./src/lib/gpoint3d.cpp	/^GPoint3d::GPoint3d(const double *v)$/;"	f	class:GPoint3d
+GPoint3d	./src/lib/gpoint3d.cpp	/^GPoint3d::GPoint3d(double x, double y, double z)$/;"	f	class:GPoint3d
+GVECTOR3D_H	./include/gvector3d.h	2;"	d
+GVector3d	./include/gvector3d.h	/^	GVector3d(const GPoint3d &v) : GPoint3d(v) {}$/;"	f	class:GVector3d
+GVector3d	./include/gvector3d.h	/^	GVector3d(const double *v) : GPoint3d(v) {}$/;"	f	class:GVector3d
+GVector3d	./include/gvector3d.h	/^	GVector3d(double x, double y, double z) : GPoint3d(x, y, z) {}$/;"	f	class:GVector3d
+GVector3d	./include/gvector3d.h	/^    GVector3d() : GPoint3d() {}$/;"	f	class:GVector3d
+GVector3d	./include/gvector3d.h	/^class GVector3d : public GPoint3d$/;"	c
+GetViewIdx	./src/lib/CLM.cpp	/^int CLM::GetViewIdx()$/;"	f	class:CLM
+Grad	./src/lib/Patch.cpp	/^void Grad(cv::Mat im,cv::Mat grad)$/;"	f
+H_	./include/FaceTracker/CLM.h	/^    cv::Mat cshape_,bshape_,oshape_,ms_,u_,g_,J_,H_; $/;"	m	class:FACETRACKER::CLM
+Height	./include/FaceTracker/PAW.h	/^    inline int Height(){return _mask.rows;}$/;"	f	class:FACETRACKER::PAW
+INCLUDES	./Makefile	/^INCLUDES = $(OPENCV_CFLAGS) -Iinclude\/$/;"	m
+IO	./include/FaceTracker/IO.h	/^  class IO{$/;"	c	namespace:FACETRACKER
+IS_ZERO	./include/gmath.h	14;"	d
+Identity	./src/lib/PDM.cpp	/^void PDM::Identity(cv::Mat &plocal,cv::Mat &pglobl)$/;"	f	class:PDM
+Init	./include/FaceTracker/FCheck.h	/^    void Init(std::vector<FCheck> &fcheck){_fcheck = fcheck;}$/;"	f	class:FACETRACKER::MFCheck
+Init	./src/lib/CLM.cpp	/^void CLM::Init(PDM &s,cv::Mat &r, vector<cv::Mat> &c,$/;"	f	class:CLM
+Init	./src/lib/FCheck.cpp	/^void FCheck::Init(double b, cv::Mat &w, PAW &paw)$/;"	f	class:FCheck
+Init	./src/lib/FDet.cpp	/^void FDet::Init(const char* fname,$/;"	f	class:FDet
+Init	./src/lib/PAW.cpp	/^void PAW::Init(cv::Mat &src,cv::Mat &tri)$/;"	f	class:PAW
+Init	./src/lib/PDM.cpp	/^void PDM::Init(cv::Mat &M, cv::Mat &V, cv::Mat &E)$/;"	f	class:PDM
+Init	./src/lib/Patch.cpp	/^void MPatch::Init(std::vector<Patch> &p)$/;"	f	class:MPatch
+Init	./src/lib/Patch.cpp	/^void Patch::Init(int t, double a, double b, cv::Mat &W)$/;"	f	class:Patch
+Init	./src/lib/Tracker.cpp	/^void Tracker::Init(CLM &clm,FDet &fdet,MFCheck &fcheck,$/;"	f	class:Tracker
+InitShape	./src/lib/Tracker.cpp	/^void Tracker::InitShape(cv::Rect &r,cv::Mat &shape)$/;"	f	class:Tracker
+J_	./include/FaceTracker/CLM.h	/^    cv::Mat cshape_,bshape_,oshape_,ms_,u_,g_,J_,H_; $/;"	m	class:FACETRACKER::CLM
+LBP	./src/lib/Patch.cpp	/^void LBP(cv::Mat im,cv::Mat lbp)$/;"	f
+LDFLAGS	./Makefile	/^LDFLAGS =$/;"	m
+LIBS	./Makefile	/^LIBS = $(OPENCV_LDFLAGS) $(OPENGL_LDFLAGS) $(ARMADILLO_LDFLAGS)$/;"	m
+Load	./src/lib/CLM.cpp	/^void CLM::Load(const char* fname)$/;"	f	class:CLM
+Load	./src/lib/FCheck.cpp	/^void FCheck::Load(const char* fname)$/;"	f	class:FCheck
+Load	./src/lib/FCheck.cpp	/^void MFCheck::Load(const char* fname)$/;"	f	class:MFCheck
+Load	./src/lib/FDet.cpp	/^void FDet::Load(const char* fname)$/;"	f	class:FDet
+Load	./src/lib/PAW.cpp	/^void PAW::Load(const char* fname)$/;"	f	class:PAW
+Load	./src/lib/PDM.cpp	/^void PDM::Load(const char* fname)$/;"	f	class:PDM
+Load	./src/lib/Patch.cpp	/^void MPatch::Load(const char* fname)$/;"	f	class:MPatch
+Load	./src/lib/Patch.cpp	/^void Patch::Load(const char* fname)$/;"	f	class:Patch
+Load	./src/lib/Tracker.cpp	/^void Tracker::Load(const char* fname)$/;"	f	class:Tracker
+LoadCon	./src/lib/IO.cpp	/^cv::Mat IO::LoadCon(const char* fname)$/;"	f	class:IO
+LoadTri	./src/lib/IO.cpp	/^cv::Mat IO::LoadTri(const char* fname)$/;"	f	class:IO
+MFCHECK	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+MFCheck	./include/FaceTracker/FCheck.h	/^    MFCheck(){;}$/;"	f	class:FACETRACKER::MFCheck
+MFCheck	./include/FaceTracker/FCheck.h	/^    MFCheck(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::MFCheck
+MFCheck	./include/FaceTracker/FCheck.h	/^    MFCheck(std::vector<FCheck> &fcheck){this->Init(fcheck);}$/;"	f	class:FACETRACKER::MFCheck
+MFCheck	./include/FaceTracker/FCheck.h	/^  class MFCheck{$/;"	c	namespace:FACETRACKER
+MPATCH	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+MPatch	./include/FaceTracker/Patch.h	/^    MPatch(){;}$/;"	f	class:FACETRACKER::MPatch
+MPatch	./include/FaceTracker/Patch.h	/^    MPatch(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::MPatch
+MPatch	./include/FaceTracker/Patch.h	/^    MPatch(std::vector<Patch> &p){this->Init(p);}$/;"	f	class:FACETRACKER::MPatch
+MPatch	./include/FaceTracker/Patch.h	/^  class MPatch{$/;"	c	namespace:FACETRACKER
+MetricUpgrade	./src/lib/PDM.cpp	/^void MetricUpgrade(cv::Mat &R)$/;"	f
+OPENCV_CFLAGS	./Makefile	/^OPENCV_CFLAGS = $(shell pkg-config --cflags opencv)$/;"	m
+OPENCV_LDFLAGS	./Makefile	/^OPENCV_LDFLAGS = $(shell pkg-config --libs opencv)$/;"	m
+OPENGL_LDFLAGS	./Makefile	/^OPENGL_LDFLAGS= -lGL -lGLU -lglut$/;"	m
+Optimize	./src/lib/CLM.cpp	/^void CLM::Optimize(int idx,int wSize,int nIter,$/;"	f	class:CLM
+PATCH	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+PAW	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+PAW	./include/FaceTracker/PAW.h	/^    PAW(){;}$/;"	f	class:FACETRACKER::PAW
+PAW	./include/FaceTracker/PAW.h	/^    PAW(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::PAW
+PAW	./include/FaceTracker/PAW.h	/^    PAW(cv::Mat &src,cv::Mat &tri){this->Init(src,tri);}$/;"	f	class:FACETRACKER::PAW
+PAW	./include/FaceTracker/PAW.h	/^  class PAW{$/;"	c	namespace:FACETRACKER
+PDM	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+PDM	./include/FaceTracker/PDM.h	/^    PDM(){;}$/;"	f	class:FACETRACKER::PDM
+PDM	./include/FaceTracker/PDM.h	/^    PDM(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::PDM
+PDM	./include/FaceTracker/PDM.h	/^    PDM(cv::Mat &M,cv::Mat &V,cv::Mat &E){this->Init(M,V,E);}$/;"	f	class:FACETRACKER::PDM
+PDM	./include/FaceTracker/PDM.h	/^  class PDM{$/;"	c	namespace:FACETRACKER
+PI	./include/gmath.h	10;"	d
+P_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+Patch	./include/FaceTracker/Patch.h	/^    Patch(){;}$/;"	f	class:FACETRACKER::Patch
+Patch	./include/FaceTracker/Patch.h	/^    Patch(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::Patch
+Patch	./include/FaceTracker/Patch.h	/^    Patch(int t,double a,double b,cv::Mat &W){this->Init(t,a,b,W);}$/;"	f	class:FACETRACKER::Patch
+Patch	./include/FaceTracker/Patch.h	/^  class Patch{$/;"	c	namespace:FACETRACKER
+Px_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+Py_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+Pz_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+R1_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+R2_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+R3_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+RADIAN_TO_ANGLE	./include/gmath.h	11;"	d
+R_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+ReDetect	./src/lib/Tracker.cpp	/^cv::Rect Tracker::ReDetect(cv::Mat &im)$/;"	f	class:Tracker
+Read	./src/lib/CLM.cpp	/^void CLM::Read(ifstream &s,bool readType)$/;"	f	class:CLM
+Read	./src/lib/FCheck.cpp	/^void FCheck::Read(ifstream &s,bool readType)$/;"	f	class:FCheck
+Read	./src/lib/FCheck.cpp	/^void MFCheck::Read(ifstream &s,bool readType)$/;"	f	class:MFCheck
+Read	./src/lib/FDet.cpp	/^void FDet::Read(ifstream &s,bool readType)$/;"	f	class:FDet
+Read	./src/lib/PAW.cpp	/^void PAW::Read(ifstream &s,bool readType)$/;"	f	class:PAW
+Read	./src/lib/PDM.cpp	/^void PDM::Read(ifstream &s,bool readType)$/;"	f	class:PDM
+Read	./src/lib/Patch.cpp	/^void MPatch::Read(ifstream &s,bool readType)$/;"	f	class:MPatch
+Read	./src/lib/Patch.cpp	/^void Patch::Read(ifstream &s,bool readType)$/;"	f	class:Patch
+Read	./src/lib/Tracker.cpp	/^void Tracker::Read(ifstream &s,bool readType)$/;"	f	class:Tracker
+ReadMat	./src/lib/IO.cpp	/^void IO::ReadMat(ifstream& s,cv::Mat &M)$/;"	f	class:IO
+Response	./src/lib/Patch.cpp	/^void MPatch::Response(cv::Mat &im,cv::Mat &resp)$/;"	f	class:MPatch
+Response	./src/lib/Patch.cpp	/^void Patch::Response(cv::Mat &im,cv::Mat &resp)$/;"	f	class:Patch
+Rot2Euler	./src/lib/PDM.cpp	/^void Rot2Euler(cv::Mat &R,cv::Mat &p)$/;"	f
+Rot2Euler	./src/lib/PDM.cpp	/^void Rot2Euler(cv::Mat &R,double& pitch,double& yaw,double& roll)$/;"	f
+SGN	./src/lib/Patch.cpp	41;"	d	file:
+SOURCE_FILES	./Makefile	/^SOURCE_FILES=\\$/;"	m
+SPLITSTRING_H	./include/splitstring.h	6;"	d
+SQR	./src/lib/CLM.cpp	43;"	d	file:
+S_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+Save	./src/lib/CLM.cpp	/^void CLM::Save(const char* fname)$/;"	f	class:CLM
+Save	./src/lib/FCheck.cpp	/^void FCheck::Save(const char* fname)$/;"	f	class:FCheck
+Save	./src/lib/FCheck.cpp	/^void MFCheck::Save(const char* fname)$/;"	f	class:MFCheck
+Save	./src/lib/FDet.cpp	/^void FDet::Save(const char* fname)$/;"	f	class:FDet
+Save	./src/lib/PAW.cpp	/^void PAW::Save(const char* fname)$/;"	f	class:PAW
+Save	./src/lib/PDM.cpp	/^void PDM::Save(const char* fname)$/;"	f	class:PDM
+Save	./src/lib/Patch.cpp	/^void MPatch::Save(const char* fname){$/;"	f	class:MPatch
+Save	./src/lib/Patch.cpp	/^void Patch::Save(const char* fname){$/;"	f	class:Patch
+Save	./src/lib/Tracker.cpp	/^void Tracker::Save(const char* fname)$/;"	f	class:Tracker
+SimT	./src/lib/CLM.cpp	/^void SimT(cv::Mat &s,double a,double b,double tx,double ty)$/;"	f
+TRACKER	./include/FaceTracker/IO.h	/^    enum{PDM = 0,PAW,PATCH,MPATCH,CLM,FDET,FCHECK,MFCHECK,TRACKER};$/;"	e	enum:FACETRACKER::IO::__anon1
+TSCALE	./src/lib/Tracker.cpp	42;"	d	file:
+Track	./src/lib/Tracker.cpp	/^int Tracker::Track(cv::Mat im,vector<int> &wSize, const int  fpd,$/;"	f	class:Tracker
+Tracker	./include/FaceTracker/Tracker.h	/^    Tracker(){;}$/;"	f	class:FACETRACKER::Tracker
+Tracker	./include/FaceTracker/Tracker.h	/^    Tracker(CLM &clm,FDet &fdet,MFCheck &fcheck,$/;"	f	class:FACETRACKER::Tracker
+Tracker	./include/FaceTracker/Tracker.h	/^    Tracker(const char* fname){this->Load(fname);}$/;"	f	class:FACETRACKER::Tracker
+Tracker	./include/FaceTracker/Tracker.h	/^  class Tracker{$/;"	c	namespace:FACETRACKER
+UpdateTemplate	./src/lib/Tracker.cpp	/^cv::Rect Tracker::UpdateTemplate(cv::Mat &im,cv::Mat &s,bool rsize)$/;"	f	class:Tracker
+Var	./include/FaceTracker/PDM.h	/^    inline double Var(int i){assert(i<_E.cols); return _E.at<double>(0,i);}$/;"	f	class:FACETRACKER::PDM
+WarpRegion	./src/lib/PAW.cpp	/^void PAW::WarpRegion(cv::Mat &mapx,cv::Mat &mapy)$/;"	f	class:PAW
+Width	./include/FaceTracker/PAW.h	/^    inline int Width(){return _mask.cols;}$/;"	f	class:FACETRACKER::PAW
+Write	./src/lib/CLM.cpp	/^void CLM::Write(ofstream &s)$/;"	f	class:CLM
+Write	./src/lib/FCheck.cpp	/^void FCheck::Write(ofstream &s)$/;"	f	class:FCheck
+Write	./src/lib/FCheck.cpp	/^void MFCheck::Write(ofstream &s)$/;"	f	class:MFCheck
+Write	./src/lib/FDet.cpp	/^void FDet::Write(ofstream &s)$/;"	f	class:FDet
+Write	./src/lib/PAW.cpp	/^void PAW::Write(ofstream &s)$/;"	f	class:PAW
+Write	./src/lib/PDM.cpp	/^void PDM::Write(ofstream &s)$/;"	f	class:PDM
+Write	./src/lib/Patch.cpp	/^void MPatch::Write(ofstream &s)$/;"	f	class:MPatch
+Write	./src/lib/Patch.cpp	/^void Patch::Write(ofstream &s)$/;"	f	class:Patch
+Write	./src/lib/Tracker.cpp	/^void Tracker::Write(ofstream &s)$/;"	f	class:Tracker
+WriteMat	./src/lib/IO.cpp	/^void IO::WriteMat(ofstream& s,cv::Mat &M)$/;"	f	class:IO
+_E	./include/FaceTracker/PDM.h	/^    cv::Mat _E; \/**< vector of eigenvalues (row vector)            *\/$/;"	m	class:FACETRACKER::PDM
+_M	./include/FaceTracker/PDM.h	/^    cv::Mat _M; \/**< mean 3D shape vector [x1,..,xn,y1,...yn]      *\/$/;"	m	class:FACETRACKER::PDM
+_V	./include/FaceTracker/PDM.h	/^    cv::Mat _V; \/**< basis of variation                            *\/$/;"	m	class:FACETRACKER::PDM
+_W	./include/FaceTracker/Patch.h	/^    cv::Mat _W; \/**< Gain                               *\/$/;"	m	class:FACETRACKER::Patch
+__CLM_h_	./include/FaceTracker/CLM.h	41;"	d
+__FCheck_h_	./include/FaceTracker/FCheck.h	41;"	d
+__FDet_h_	./include/FaceTracker/FDet.h	41;"	d
+__IO_h_	./include/FaceTracker/IO.h	41;"	d
+__PAW_h_	./include/FaceTracker/PAW.h	41;"	d
+__PDM_h_	./include/FaceTracker/PDM.h	41;"	d
+__Patch_h_	./include/FaceTracker/Patch.h	41;"	d
+__Tracker_h_	./include/FaceTracker/Tracker.h	41;"	d
+_a	./include/FaceTracker/Patch.h	/^    double  _a; \/**< scaling                            *\/$/;"	m	class:FACETRACKER::Patch
+_alpha	./include/FaceTracker/PAW.h	/^    cv::Mat _alpha;  \/**< matrix of (c,x,y) coeffs for alpha *\/$/;"	m	class:FACETRACKER::PAW
+_b	./include/FaceTracker/FCheck.h	/^    double  _b;   \/**< SVM bias              *\/$/;"	m	class:FACETRACKER::FCheck
+_b	./include/FaceTracker/Patch.h	/^    double  _b; \/**< bias                               *\/$/;"	m	class:FACETRACKER::Patch
+_beta	./include/FaceTracker/PAW.h	/^    cv::Mat _beta;   \/**< matrix of (c,x,y) coeffs for alpha *\/$/;"	m	class:FACETRACKER::PAW
+_cascade	./include/FaceTracker/FDet.h	/^    CvHaarClassifierCascade* _cascade;        \/**< ...                      *\/$/;"	m	class:FACETRACKER::FDet
+_cent	./include/FaceTracker/CLM.h	/^    std::vector<cv::Mat>              _cent;  \/**< Centers\/view (Euler)     *\/$/;"	m	class:FACETRACKER::CLM
+_clm	./include/FaceTracker/Tracker.h	/^    CLM        _clm;    \/**< Constrained Local Model           *\/$/;"	m	class:FACETRACKER::Tracker
+_coeff	./include/FaceTracker/PAW.h	/^    cv::Mat _coeff;  \/**< affine coeffs for all triangles    *\/$/;"	m	class:FACETRACKER::PAW
+_dst	./include/FaceTracker/PAW.h	/^    cv::Mat _dst;    \/**< destination points                 *\/$/;"	m	class:FACETRACKER::PAW
+_fcheck	./include/FaceTracker/FCheck.h	/^    std::vector<FCheck> _fcheck; \/**< FCheck for each view *\/$/;"	m	class:FACETRACKER::MFCheck
+_fcheck	./include/FaceTracker/Tracker.h	/^    MFCheck    _fcheck; \/**< Failure checker                   *\/$/;"	m	class:FACETRACKER::Tracker
+_fdet	./include/FaceTracker/Tracker.h	/^    FDet       _fdet;   \/**< Face Detector                     *\/$/;"	m	class:FACETRACKER::Tracker
+_frame	./include/FaceTracker/Tracker.h	/^    int64      _frame;  \/**< Frame number since last detection *\/    $/;"	m	class:FACETRACKER::Tracker
+_h	./include/FaceTracker/Patch.h	/^    int _w,_h;             \/**< Width and height of patch *\/$/;"	m	class:FACETRACKER::MPatch
+_img_scale	./include/FaceTracker/FDet.h	/^    double                   _img_scale;      \/**< ...                      *\/$/;"	m	class:FACETRACKER::FDet
+_mapx	./include/FaceTracker/PAW.h	/^    cv::Mat _mapx;   \/**< x-destination of warped points     *\/$/;"	m	class:FACETRACKER::PAW
+_mapy	./include/FaceTracker/PAW.h	/^    cv::Mat _mapy;   \/**< y-destination of warped points     *\/$/;"	m	class:FACETRACKER::PAW
+_mask	./include/FaceTracker/PAW.h	/^    cv::Mat _mask;   \/**< Valid region mask                  *\/$/;"	m	class:FACETRACKER::PAW
+_min_neighbours	./include/FaceTracker/FDet.h	/^    int                      _min_neighbours; \/**< see OpenCV documentation *\/$/;"	m	class:FACETRACKER::FDet
+_min_size	./include/FaceTracker/FDet.h	/^    int                      _min_size;       \/**< ...                      *\/$/;"	m	class:FACETRACKER::FDet
+_nPix	./include/FaceTracker/PAW.h	/^    int     _nPix;   \/**< Number of pixels                   *\/$/;"	m	class:FACETRACKER::PAW
+_p	./include/FaceTracker/Patch.h	/^    std::vector<Patch> _p; \/**< List of patches           *\/$/;"	m	class:FACETRACKER::MPatch
+_patch	./include/FaceTracker/CLM.h	/^    std::vector<std::vector<MPatch> > _patch; \/**< Patches\/point\/view       *\/$/;"	m	class:FACETRACKER::CLM
+_paw	./include/FaceTracker/FCheck.h	/^    PAW     _paw; \/**< Piecewise affine warp *\/$/;"	m	class:FACETRACKER::FCheck
+_pdm	./include/FaceTracker/CLM.h	/^    PDM                               _pdm;   \/**< 3D Shape model           *\/$/;"	m	class:FACETRACKER::CLM
+_pglobl	./include/FaceTracker/CLM.h	/^    cv::Mat                           _pglobl;\/**< global parameters        *\/$/;"	m	class:FACETRACKER::CLM
+_plocal	./include/FaceTracker/CLM.h	/^    cv::Mat                           _plocal;\/**< local parameters         *\/$/;"	m	class:FACETRACKER::CLM
+_rect	./include/FaceTracker/Tracker.h	/^    cv::Rect   _rect;   \/**< Detected rectangle                *\/$/;"	m	class:FACETRACKER::Tracker
+_refs	./include/FaceTracker/CLM.h	/^    cv::Mat                           _refs;  \/**< Reference shape          *\/$/;"	m	class:FACETRACKER::CLM
+_rshape	./include/FaceTracker/Tracker.h	/^    cv::Mat    _rshape; \/**< Reference shape                   *\/$/;"	m	class:FACETRACKER::Tracker
+_scale_factor	./include/FaceTracker/FDet.h	/^    double                   _scale_factor;   \/**< ...                      *\/$/;"	m	class:FACETRACKER::FDet
+_shape	./include/FaceTracker/Tracker.h	/^    cv::Mat    _shape;  \/**< Current shape                     *\/$/;"	m	class:FACETRACKER::Tracker
+_simil	./include/FaceTracker/Tracker.h	/^    cv::Scalar _simil;  \/**< Initialization similarity         *\/$/;"	m	class:FACETRACKER::Tracker
+_src	./include/FaceTracker/PAW.h	/^    cv::Mat _src;    \/**< Source points                      *\/$/;"	m	class:FACETRACKER::PAW
+_t	./include/FaceTracker/Patch.h	/^    int     _t; \/**< Type of patch (0=raw,1=grad,2=lbp) *\/$/;"	m	class:FACETRACKER::Patch
+_tri	./include/FaceTracker/PAW.h	/^    cv::Mat _tri;    \/**< Triangulation                      *\/$/;"	m	class:FACETRACKER::PAW
+_tridx	./include/FaceTracker/PAW.h	/^    cv::Mat _tridx;  \/**< Triangle for each valid pixel      *\/$/;"	m	class:FACETRACKER::PAW
+_visi	./include/FaceTracker/CLM.h	/^    std::vector<cv::Mat>              _visi;  \/**< Visibility for each view *\/$/;"	m	class:FACETRACKER::CLM
+_w	./include/FaceTracker/FCheck.h	/^    cv::Mat _w;   \/**< SVM gain              *\/$/;"	m	class:FACETRACKER::FCheck
+_w	./include/FaceTracker/Patch.h	/^    int _w,_h;             \/**< Width and height of patch *\/$/;"	m	class:FACETRACKER::MPatch
+_xmin	./include/FaceTracker/PAW.h	/^    double  _xmin;   \/**< Minimum x-coord for src            *\/$/;"	m	class:FACETRACKER::PAW
+_ymin	./include/FaceTracker/PAW.h	/^    double  _ymin;   \/**< Minimum y-coord for src            *\/$/;"	m	class:FACETRACKER::PAW
+addRay	./src/lib/camera.cpp	/^void Camera::addRay(double u, double v)$/;"	f	class:Camera
+bshape_	./include/FaceTracker/CLM.h	/^    cv::Mat cshape_,bshape_,oshape_,ms_,u_,g_,J_,H_; $/;"	m	class:FACETRACKER::CLM
+buildRotationMatrix	./include/camera.h	/^static mat buildRotationMatrix(double w, double x, double y, double z) {$/;"	f	class:Camera
+buildTranslationMatrix	./include/camera.h	/^    static mat buildTranslationMatrix(double x, double y, double z)$/;"	f	class:Camera
+cameraMatRight	./src/lib/face_tracker.cpp	/^cv::Mat cameraMatRight = (Mat_<float>(3, 3) << 138.5785, 0.0, 326.8120, 0, 138.5308, 233.6496, 0.0, 0.0, 1.000);$/;"	v
+cameraMatrix	./include/camera.h	/^    mat cameraMatrix;$/;"	m	class:Camera
+changeSize	./src/lib/face_tracker.cpp	/^void changeSize(int w, int h)$/;"	f
+clearRay	./src/lib/camera.cpp	/^void Camera::clearRay()$/;"	f	class:Camera
+con	./include/FaceTracker/faceTracker.h	/^    cv::Mat con;$/;"	m	class:FaceTracker
+conFile	./include/FaceTracker/faceTracker.h	/^    char ftFile[256],conFile[256],triFile[256];$/;"	m	class:FaceTracker
+createIdentity	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createIdentity()$/;"	f	class:GMatrix3d
+createMirror	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createMirror(const GVector3d &v)$/;"	f	class:GMatrix3d
+createRotate	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createRotate(double af, const GVector3d &v)\/\/v是旋转轴$/;"	f	class:GMatrix3d
+createRotateX	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createRotateX(double af)$/;"	f	class:GMatrix3d
+createRotateX	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createRotateX(double sinAF, double cosAF)$/;"	f	class:GMatrix3d
+createRotateY	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createRotateY(double af)$/;"	f	class:GMatrix3d
+createRotateY	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createRotateY(double sinAF, double cosAF)$/;"	f	class:GMatrix3d
+createRotateZ	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createRotateZ(double af)$/;"	f	class:GMatrix3d
+createRotateZ	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createRotateZ(double sinAF, double cosAF)$/;"	f	class:GMatrix3d
+createScale	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createScale(double sx, double sy, double sz)$/;"	f	class:GMatrix3d
+createTranslate	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createTranslate(double x, double y, double z)$/;"	f	class:GMatrix3d
+createZero	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::createZero()$/;"	f	class:GMatrix3d
+crop_	./include/FaceTracker/FCheck.h	/^    cv::Mat crop_,vec_;$/;"	m	class:FACETRACKER::FCheck
+crossMult	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::crossMult(const GVector3d &v) const$/;"	f	class:GVector3d
+cshape_	./include/FaceTracker/CLM.h	/^    cv::Mat cshape_,bshape_,oshape_,ms_,u_,g_,J_,H_; $/;"	m	class:FACETRACKER::CLM
+db	./src/lib/CLM.cpp	42;"	d	file:
+db	./src/lib/PAW.cpp	42;"	d	file:
+db	./src/lib/PDM.cpp	41;"	d	file:
+db	./src/lib/Tracker.cpp	41;"	d	file:
+display	./src/lib/face_tracker.cpp	/^void display()$/;"	f
+displayList	./include/camera.h	/^    GLuint displayList;$/;"	m	class:Camera
+displayRays	./src/lib/face_tracker.cpp	/^bool displayRays = false;$/;"	v
+distCoefLeft	./src/lib/face_tracker.cpp	/^cv::Mat distCoefLeft = (Mat_<float>(1, 4) << 0.04616, -0.01554, -0.00209, 0.00064);$/;"	v
+distCoefRight	./src/lib/face_tracker.cpp	/^cv::Mat distCoefRight = (Mat_<float>(1, 4) << 0.01361, -0.00621, -0.00397, -0.00129);$/;"	v
+dotMult	./src/lib/gvector3d.cpp	/^double GVector3d::dotMult(const GVector3d &v) const$/;"	f	class:GVector3d
+draw	./src/lib/camera.cpp	/^void Camera::draw() const$/;"	f	class:Camera
+draw	./src/lib/faceTracker.cpp	/^void FaceTracker::draw(cv::Mat &image,cv::Mat &shape,cv::Mat &con,cv::Mat &tri,cv::Mat &visi)$/;"	f	class:FaceTracker
+drawQuad	./src/lib/camera.cpp	/^vector<vec> Camera::drawQuad(int i, int j)$/;"	f	class:Camera
+drawRays	./src/lib/camera.cpp	/^void Camera::drawRays() const$/;"	f	class:Camera
+drawWirePlane	./src/lib/face_tracker.cpp	/^void drawWirePlane(GLfloat width)$/;"	f
+exit	./include/frameReader.h	/^    void exit(){ quit = true;}$/;"	f	class:FrameReader
+f	./include/frameReader.h	/^    FILE *f;$/;"	m	class:FrameReader
+faceTrack	./src/lib/face_tracker.cpp	/^void faceTrack()$/;"	f
+findNearestPoint	./include/camera.h	/^    static vec findNearestPoint(vector<vec> line1, vector<vec>line2)$/;"	f	class:Camera
+flds	./include/splitstring.h	/^    vector<string> flds;$/;"	m	class:splitstring
+ftFile	./include/FaceTracker/faceTracker.h	/^    char ftFile[256],conFile[256],triFile[256];$/;"	m	class:FaceTracker
+gDistance	./src/lib/gmath.cpp	/^double gDistance(const GPoint3d &v0, const GPoint3d &v1)$/;"	f
+gInverseMatrix	./src/lib/gmath.cpp	/^bool gInverseMatrix(double *m, int n)$/;"	f
+gIsStartTrackBall	./src/lib/face_tracker.cpp	/^bool gIsStartTrackBall = false;$/;"	v
+gMousePtToSphereVec	./src/lib/face_tracker.cpp	/^GVector3d gMousePtToSphereVec(int x, int y, int w, int h)$/;"	f
+gMouseX	./src/lib/face_tracker.cpp	/^int gMouseX = -1;$/;"	v
+gMouseY	./src/lib/face_tracker.cpp	/^int gMouseY = -1;$/;"	v
+gRotMatrix	./src/lib/face_tracker.cpp	/^GMatrix3d gRotMatrix;$/;"	v
+gRound	./src/lib/gmath.cpp	/^int gRound(double x)$/;"	f
+gSqr	./src/lib/gmath.cpp	/^double gSqr(double x)$/;"	f
+gTrunc	./src/lib/gmath.cpp	/^int gTrunc(double x)$/;"	f
+g_	./include/FaceTracker/CLM.h	/^    cv::Mat cshape_,bshape_,oshape_,ms_,u_,g_,J_,H_; $/;"	m	class:FACETRACKER::CLM
+getInverse	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::getInverse() const$/;"	f	class:GMatrix3d
+getLength	./src/lib/gvector3d.cpp	/^double GVector3d::getLength() const$/;"	f	class:GVector3d
+getLengthXY	./src/lib/gvector3d.cpp	/^double GVector3d::getLengthXY() const$/;"	f	class:GVector3d
+getLengthYZ	./src/lib/gvector3d.cpp	/^double GVector3d::getLengthYZ() const$/;"	f	class:GVector3d
+getLengthZX	./src/lib/gvector3d.cpp	/^double GVector3d::getLengthZX() const$/;"	f	class:GVector3d
+getNormal	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::getNormal() const$/;"	f	class:GVector3d
+getPoints	./src/lib/faceTracker.cpp	/^std::vector<cv::Point> FaceTracker::getPoints(cv::Mat img)$/;"	f	class:FaceTracker
+getTranspose	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::getTranspose() const$/;"	f	class:GMatrix3d
+getWCRay	./src/lib/camera.cpp	/^vector<vec> Camera::getWCRay(int n)$/;"	f	class:Camera
+gltBeginRasterText	./src/lib/ggltools.cpp	/^void gltBeginRasterText(int w, int h)$/;"	f
+gltEndRasterText	./src/lib/ggltools.cpp	/^void gltEndRasterText()$/;"	f
+gltRasterText	./src/lib/ggltools.cpp	/^void gltRasterText(double x, double y, const char *text, void *font)$/;"	f
+gray_	./include/FaceTracker/Tracker.h	/^    cv::Mat gray_,temp_,ncc_,small_;$/;"	m	class:FACETRACKER::Tracker
+gswap	./include/gmath.h	/^template <class TData> void gswap(TData &x, TData &y)$/;"	f
+h	./include/FaceTracker/Patch.h	/^    inline int h(){return _W.rows;}$/;"	f	class:FACETRACKER::Patch
+handleKeyPress	./src/lib/face_tracker.cpp	/^void handleKeyPress(int key, int x, int y)$/;"	f
+height	./include/camera.h	/^    const double height;$/;"	m	class:Camera
+height	./src/lib/face_tracker.cpp	/^int height = 768;$/;"	v
+im_	./include/FaceTracker/Patch.h	/^    cv::Mat im_,res_;$/;"	m	class:FACETRACKER::Patch
+init	./src/lib/camera.cpp	/^void Camera::init()$/;"	f	class:Camera
+init	./src/lib/face_tracker.cpp	/^void init()$/;"	f
+invSimT	./src/lib/CLM.cpp	/^void invSimT(double a1,double b1,double tx1,double ty1,$/;"	f
+inverse	./src/lib/gmatrix3d.cpp	/^void GMatrix3d::inverse()$/;"	f	class:GMatrix3d
+isMoving	./src/lib/face_tracker.cpp	/^bool isMoving = false;$/;"	v
+isWithinTri	./src/lib/PAW.cpp	/^int isWithinTri(double x,double y,cv::Mat &tri,cv::Mat &shape)$/;"	f
+isZero	./src/lib/gvector3d.cpp	/^bool GVector3d::isZero() const$/;"	f	class:GVector3d
+it	./src/lib/CLM.cpp	41;"	d	file:
+it	./src/lib/PAW.cpp	41;"	d	file:
+leftCamera	./src/lib/face_tracker.cpp	/^Camera leftCamera;$/;"	v
+leftFrame	./include/frame.h	/^   IplImage* leftFrame;$/;"	m	class:Frame
+mMatrix	./include/gmatrix3d.h	/^	double mMatrix[16];$/;"	m	class:GMatrix3d
+mVector	./include/gpoint3d.h	/^	double mVector[3];			\/\/坐标数组分别表示x, y, z$/;"	m	class:GPoint3d
+main	./src/lib/face_tracker.cpp	/^int main(int argc, char **argv)$/;"	f
+model	./include/FaceTracker/faceTracker.h	/^    FACETRACKER::Tracker model;$/;"	m	class:FaceTracker
+mouseEvent	./src/lib/face_tracker.cpp	/^void mouseEvent(int button, int state, int x, int y)$/;"	f
+mouseMoveEvent	./src/lib/face_tracker.cpp	/^void mouseMoveEvent(int x, int y)$/;"	f
+ms_	./include/FaceTracker/CLM.h	/^    cv::Mat cshape_,bshape_,oshape_,ms_,u_,g_,J_,H_; $/;"	m	class:FACETRACKER::CLM
+nModes	./include/FaceTracker/PDM.h	/^    inline int nModes(){return _V.cols;}$/;"	f	class:FACETRACKER::PDM
+nPatch	./include/FaceTracker/Patch.h	/^    inline int nPatch(){return _p.size();}$/;"	f	class:FACETRACKER::MPatch
+nPoints	./include/FaceTracker/PAW.h	/^    inline int nPoints(){return _src.rows\/2;}$/;"	f	class:FACETRACKER::PAW
+nPoints	./include/FaceTracker/PDM.h	/^    inline int nPoints(){return _M.rows\/3;}$/;"	f	class:FACETRACKER::PDM
+nTri	./include/FaceTracker/PAW.h	/^    inline int nTri(){return _tri.rows;}$/;"	f	class:FACETRACKER::PAW
+nViews	./include/FaceTracker/CLM.h	/^    inline int nViews(){return _patch.size();}$/;"	f	class:FACETRACKER::CLM
+ncc_	./include/FaceTracker/Tracker.h	/^    cv::Mat gray_,temp_,ncc_,small_;$/;"	m	class:FACETRACKER::Tracker
+normalize	./src/lib/camera.cpp	/^vec Camera::normalize(vec input)$/;"	f	class:Camera
+normalize	./src/lib/gvector3d.cpp	/^void GVector3d::normalize()$/;"	f	class:GVector3d
+numOfRays	./include/camera.h	/^    int numOfRays() const{ return rays.size();}$/;"	f	class:Camera
+operator *	./src/lib/gmatrix3d.cpp	/^GMatrix3d GMatrix3d::operator * (const GMatrix3d &m) const$/;"	f	class:GMatrix3d
+operator *	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::operator * (const GMatrix3d &m) const$/;"	f	class:GVector3d
+operator *	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::operator * (double d) const$/;"	f	class:GVector3d
+operator *=	./src/lib/gmatrix3d.cpp	/^void GMatrix3d::operator *= (const GMatrix3d &m)$/;"	f	class:GMatrix3d
+operator *=	./src/lib/gvector3d.cpp	/^void GVector3d::operator *= (const GMatrix3d &m)$/;"	f	class:GVector3d
+operator *=	./src/lib/gvector3d.cpp	/^void GVector3d::operator *= (double d)$/;"	f	class:GVector3d
+operator +	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::operator + (const GVector3d &v) const$/;"	f	class:GVector3d
+operator +=	./src/lib/gvector3d.cpp	/^void GVector3d::operator += (const GVector3d &v)$/;"	f	class:GVector3d
+operator -	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::operator - () const$/;"	f	class:GVector3d
+operator -	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::operator - (const GVector3d &v) const$/;"	f	class:GVector3d
+operator -=	./src/lib/gvector3d.cpp	/^void GVector3d::operator -= (const GVector3d &v)$/;"	f	class:GVector3d
+operator /	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::operator \/ (double d) const$/;"	f	class:GVector3d
+operator /=	./src/lib/gvector3d.cpp	/^void GVector3d::operator \/= (double d)$/;"	f	class:GVector3d
+operator =	./include/FaceTracker/FCheck.h	/^    MFCheck& operator=(MFCheck const&rhs){      $/;"	f	class:FACETRACKER::MFCheck
+operator =	./src/lib/CLM.cpp	/^CLM& CLM::operator= (CLM const& rhs)$/;"	f	class:CLM
+operator =	./src/lib/FCheck.cpp	/^FCheck& FCheck::operator= (FCheck const& rhs)$/;"	f	class:FCheck
+operator =	./src/lib/FDet.cpp	/^FDet& FDet::operator= (FDet const& rhs)$/;"	f	class:FDet
+operator =	./src/lib/PAW.cpp	/^PAW& PAW::operator= (PAW const& rhs)$/;"	f	class:PAW
+operator =	./src/lib/PDM.cpp	/^PDM& PDM::operator= (PDM const& rhs)$/;"	f	class:PDM
+operator =	./src/lib/Patch.cpp	/^MPatch& MPatch::operator= (MPatch const& rhs)$/;"	f	class:MPatch
+operator =	./src/lib/Patch.cpp	/^Patch& Patch::operator= (Patch const& rhs)$/;"	f	class:Patch
+operator =	./src/lib/gmatrix3d.cpp	/^void GMatrix3d::operator = (const GMatrix3d &m)$/;"	f	class:GMatrix3d
+operator =	./src/lib/gpoint3d.cpp	/^void GPoint3d::operator = (const GPoint3d &other)$/;"	f	class:GPoint3d
+operator []	./include/gmatrix3d.h	/^	double & operator [] (int index)$/;"	f	class:GMatrix3d
+operator []	./include/gpoint3d.h	/^	double & operator [] (int index)$/;"	f	class:GPoint3d
+operator double *	./include/gmatrix3d.h	/^	operator double * ()$/;"	f	class:GMatrix3d
+operator double *	./include/gpoint3d.h	/^	operator double * ()$/;"	f	class:GPoint3d
+oshape_	./include/FaceTracker/CLM.h	/^    cv::Mat cshape_,bshape_,oshape_,ms_,u_,g_,J_,H_; $/;"	m	class:FACETRACKER::CLM
+pmem_	./include/FaceTracker/CLM.h	/^    std::vector<cv::Mat> prob_,pmem_,wmem_;$/;"	m	class:FACETRACKER::CLM
+prob_	./include/FaceTracker/CLM.h	/^    std::vector<cv::Mat> prob_,pmem_,wmem_;$/;"	m	class:FACETRACKER::CLM
+quit	./include/frameReader.h	/^    bool quit;$/;"	m	class:FrameReader
+raySize	./include/camera.h	/^    int raySize;$/;"	m	class:Camera
+rays	./include/camera.h	/^    vector<vec> rays;   \/\/A vector store the normalized set of ray dirs$/;"	m	class:Camera
+readFrame	./src/lib/frameReader.cpp	/^Frame FrameReader::readFrame()$/;"	f	class:FrameReader
+res_	./include/FaceTracker/Patch.h	/^    cv::Mat im_,res_;$/;"	m	class:FACETRACKER::Patch
+res_	./include/FaceTracker/Patch.h	/^    cv::Mat res_;$/;"	m	class:FACETRACKER::MPatch
+rightCamera	./src/lib/face_tracker.cpp	/^Camera rightCamera;$/;"	v
+rightFrame	./include/frame.h	/^   IplImage* rightFrame;$/;"	m	class:Frame
+rotationMatrix	./include/camera.h	/^    mat rotationMatrix;$/;"	m	class:Camera
+s_	./include/FaceTracker/PDM.h	/^    cv::Mat S_,R_,s_,P_,Px_,Py_,Pz_,R1_,R2_,R3_;$/;"	m	class:FACETRACKER::PDM
+sameSide	./src/lib/PAW.cpp	/^bool sameSide(double x0, double y0, double x1, double y1,$/;"	f
+set	./include/gpoint3d.h	/^	void set(const double *v)$/;"	f	class:GPoint3d
+set	./include/gpoint3d.h	/^	void set(double x, double y, double z)$/;"	f	class:GPoint3d
+setMatrices	./src/lib/camera.cpp	/^void Camera::setMatrices(mat rm, mat tm, mat cm)$/;"	f	class:Camera
+setX	./include/gpoint3d.h	/^	void setX(double x) { mVector[0] = x; }$/;"	f	class:GPoint3d
+setY	./include/gpoint3d.h	/^	void setY(double y) { mVector[1] = y; }$/;"	f	class:GPoint3d
+setZ	./include/gpoint3d.h	/^	void setZ(double z) { mVector[2] = z; }$/;"	f	class:GPoint3d
+size	./include/camera.h	/^    const GLfloat size;$/;"	m	class:Camera
+small_	./include/FaceTracker/Tracker.h	/^    cv::Mat gray_,temp_,ncc_,small_;$/;"	m	class:FACETRACKER::Tracker
+small_img_	./include/FaceTracker/FDet.h	/^    cv::Mat small_img_; CvMemStorage* storage_;$/;"	m	class:FACETRACKER::FDet
+split	./src/lib/splitstring.cpp	/^vector<string>& splitstring::split(char delim, int rep) {$/;"	f	class:splitstring
+splitstring	./include/splitstring.h	/^    splitstring(char *s) : string(s) { };$/;"	f	class:splitstring
+splitstring	./include/splitstring.h	/^    splitstring(string s) : string(s) { };$/;"	f	class:splitstring
+splitstring	./include/splitstring.h	/^class splitstring : public string {$/;"	c
+storage_	./include/FaceTracker/FDet.h	/^    cv::Mat small_img_; CvMemStorage* storage_;$/;"	m	class:FACETRACKER::FDet
+sum2one	./src/lib/Patch.cpp	/^void sum2one(cv::Mat &M)$/;"	f
+temp_	./include/FaceTracker/Tracker.h	/^    cv::Mat gray_,temp_,ncc_,small_;$/;"	m	class:FACETRACKER::Tracker
+timerFunction	./src/lib/face_tracker.cpp	/^void timerFunction(int value)       $/;"	f
+transMatrix	./include/camera.h	/^    double transMatrix[16];$/;"	m	class:Camera
+transformTo	./src/lib/gpoint3d.cpp	/^GPoint3d GPoint3d::transformTo(const GMatrix3d &m) const$/;"	f	class:GPoint3d
+transformTo	./src/lib/gvector3d.cpp	/^GVector3d GVector3d::transformTo(const GMatrix3d &m) const$/;"	f	class:GVector3d
+translationMatrix	./include/camera.h	/^    mat translationMatrix;$/;"	m	class:Camera
+translationMatrix	./src/lib/face_tracker.cpp	/^GMatrix3d translationMatrix;$/;"	v
+transpose	./src/lib/gmatrix3d.cpp	/^void GMatrix3d::transpose()$/;"	f	class:GMatrix3d
+tri	./include/FaceTracker/faceTracker.h	/^    cv::Mat tri;$/;"	m	class:FaceTracker
+triFile	./include/FaceTracker/faceTracker.h	/^    char ftFile[256],conFile[256],triFile[256];$/;"	m	class:FaceTracker
+u_	./include/FaceTracker/CLM.h	/^    cv::Mat cshape_,bshape_,oshape_,ms_,u_,g_,J_,H_; $/;"	m	class:FACETRACKER::CLM
+usbBuf	./include/frameReader.h	/^    unsigned char usbBuf[16384];$/;"	m	class:FrameReader
+vecMutex	./src/lib/face_tracker.cpp	/^std::mutex vecMutex;$/;"	v
+vec_	./include/FaceTracker/FCheck.h	/^    cv::Mat crop_,vec_;$/;"	m	class:FACETRACKER::FCheck
+w	./include/FaceTracker/Patch.h	/^    inline int w(){return _W.cols;}$/;"	f	class:FACETRACKER::Patch
+width	./include/camera.h	/^    const double width;$/;"	m	class:Camera
+width	./src/lib/face_tracker.cpp	/^int width = 1024;$/;"	v
+wmem_	./include/FaceTracker/CLM.h	/^    std::vector<cv::Mat> prob_,pmem_,wmem_;$/;"	m	class:FACETRACKER::CLM
+x	./include/gpoint3d.h	/^	double x() const	{ return mVector[0]; }$/;"	f	class:GPoint3d
+y	./include/gpoint3d.h	/^	double y() const	{ return mVector[1]; }$/;"	f	class:GPoint3d
+z	./include/gpoint3d.h	/^	double z() const	{ return mVector[2]; }$/;"	f	class:GPoint3d
+zoom	./src/lib/face_tracker.cpp	/^double zoom = 150.0;$/;"	v
+~Camera	./src/lib/camera.cpp	/^Camera::~Camera()$/;"	f	class:Camera
+~FDet	./src/lib/FDet.cpp	/^FDet::~FDet()$/;"	f	class:FDet
