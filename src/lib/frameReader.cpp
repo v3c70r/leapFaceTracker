@@ -53,3 +53,12 @@ Frame FrameReader::readFrame()
     return output;
 }
 
+Frame FrameReader::readFrameSDK()
+{
+    if (ctrl.isConnected())
+    {
+        Leap::Frame frame = ctrl.frame();
+    }
+}
+
+

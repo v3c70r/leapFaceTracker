@@ -7,6 +7,7 @@
 
 #include <frame.h>
 #include <cv.h>
+#include <Leap.h>
 
 class FrameReader
 {
@@ -17,12 +18,14 @@ private:
     FILE *f;
     unsigned char usbBuf[16384];
     bool quit;
+    Leap::Controller ctrl;
 public:
     FrameReader(FILE *file):FRAME_WIDTH(640),FRAME_HEIGHT(240),FRAME_SIZE(640*240),f(file)
     {
         quit = false;
     }
     Frame readFrame();   //Read a frame from in
+    Frame readFrameSDK();
     void exit(){ quit = true;}
 
 };

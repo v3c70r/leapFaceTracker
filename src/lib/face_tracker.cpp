@@ -16,6 +16,7 @@
 #include <sstream>
 #include <pthread.h>
 #include <thread>
+#include <mutex>
 
 using namespace arma;
 using namespace std;

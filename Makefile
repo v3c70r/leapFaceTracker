@@ -5,12 +5,12 @@ INCLUDES = $(OPENCV_CFLAGS) -Iinclude/
 #lib
 OPENCV_LDFLAGS = $(shell pkg-config --libs opencv)
 OPENGL_LDFLAGS= -lGL -lGLU -lglut
-ARMADILLO_LDFLAGS = -larmadillo
-LIBS = $(OPENCV_LDFLAGS) $(OPENGL_LDFLAGS) $(ARMADILLO_LDFLAGS)
+ARMADILLO_LDFLAGS = -larmadillo 
+LIBS = $(OPENCV_LDFLAGS) $(OPENGL_LDFLAGS) $(ARMADILLO_LDFLAGS) -lpthread -lLeap
 
 
 
-CFLAGS = -std=c++0x -g -Wall -DNDEBUG 
+CFLAGS = -std=c++11 -g -Wall -DNDEBUG 
 LDFLAGS =
 
 CC = g++
