@@ -256,7 +256,7 @@ void CLM::Fit(cv::Mat im, vector<int> &wSize,
       s += string(".png"); 
       cv::imwrite(s, prob_[i]*512);
       
-      cv::imshow(s, prob_[i]*4);
+      //cv::imshow(s, prob_[i]*4);
     }
     SimT(cshape_,a2,b2,tx2,ty2); 
     _pdm.ApplySimT(a2,b2,tx2,ty2,_pglobl);

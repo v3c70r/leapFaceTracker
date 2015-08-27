@@ -17,16 +17,11 @@
 #include <pthread.h>
 #include <thread>
 #include <mutex>
+#include <Leap.h>
 
 using namespace arma;
 using namespace std;
 ////=============================================================================
-cv::Mat cameraMatLeft = (Mat_<float>(3, 3) << 138.8489, 0.0, 338.5789, 0, 138.1636, 235.8967, 0.0, 0.0, 1.000);
-cv::Mat cameraMatRight = (Mat_<float>(3, 3) << 138.5785, 0.0, 326.8120, 0, 138.5308, 233.6496, 0.0, 0.0, 1.000);
-
-cv::Mat distCoefLeft = (Mat_<float>(1, 4) << 0.04616, -0.01554, -0.00209, 0.00064);
-cv::Mat distCoefRight = (Mat_<float>(1, 4) << 0.01361, -0.00621, -0.00397, -0.00129);
-FrameReader fr(stdin);
 std::mutex vecMutex;
 
 
@@ -52,64 +47,73 @@ void faceTrack()
 {
 
 
-    int key;
+    //int key;
     FaceTracker ft;
-    while(!feof(stdin))
-    {
-        Frame f = fr.readFrame();
-        cv::Mat leftMat(f.leftFrame);
-        cv::Mat rightMat(f.rightFrame);
-        cv::Mat outLeft;
-        cv::Mat outRight;
-        undistort(leftMat, outLeft, cameraMatLeft, distCoefLeft);
-        undistort(rightMat, outRight, cameraMatRight, distCoefRight);
+    ImgListener listener;
+    listener.setMutex(&vecMutex);
+    listener.setCamera(&leftCamera, &rightCamera);
+    Leap::Controller controller;
+    controller.addListener(listener);
 
-        //Get points
-        //std::cout<<cv::countNonZero(outLeft);
-        //std::cout<<cv::countNonZero(outRight);
-        //
-        //vecMutex.lock();
-        //std::cout<<"Adding Rays"<<std::endl;
-        //std::cout<<leftCamera.numOfRays()<<std::endl;
-        //std::cout<<leftCamera.numOfRays()<<std::endl;
-        //leftCamera.addRay(10, 10);
-        //rightCamera.addRay(10, 10);
-        //leftCamera.addRay(10, 10);
-        //rightCamera.addRay(10, 10);
-        //vecMutex.unlock();
-        
-        vecMutex.lock();
-        leftCamera.clearRay();
-        rightCamera.clearRay();
 
-        std::vector<cv::Point> leftPoints = ft.getPoints(outLeft);
-        std::vector<cv::Point> rightPoints = ft.getPoints(outRight);
-        //Draw points on frames
+    std::cout<<"Press Enter to quid..."<<std::endl;
+    std::cin.get();
+    controller.removeListener(listener);
 
-        for (int i=0; i<leftPoints.size(); i++){
-            cv::circle(outLeft, leftPoints[i], 2, CV_RGB(255, 0, 0));
-            leftCamera.addRay(leftPoints[i].x, leftPoints[i].y);
-        }
+    //while(fr.isConnected())
+    //{
+    //    Frame f = fr.readFrameSDK();
+    //    std::cout<<"finished get image\n";
 
-        for (int i=0; i<rightPoints.size(); i++){
-            cv::circle(outRight, rightPoints[i], 2, CV_RGB(255, 0, 0));
-            rightCamera.addRay(rightPoints[i].x, rightPoints[i].y);
-        }
-        //std::cout<<leftCamera.numOfRays()<<std::endl;
-        //std::cout<<leftCamera.numOfRays()<<std::endl;
+    //    //cv::Mat leftMat(f.leftFrame);
+    //    //cv::Mat rightMat(f.rightFrame);
+    //    //std::cout<<"finished copying image\n";
 
-        vecMutex.unlock();
+    //    //imshow("left", f.leftFrame);
+    //    //imshow("right", f.rightFrame);
 
-        imshow("left",outLeft);
-        imshow("right", outRight);
-        //cvShowImage("left", leftMat);
-        //cvShowImage("right", rightMat);
-        key = cvWaitKey(0);
-        if (key == 'q' || key == 0x1B)
-            break;
+    //    //cvWaitKey(10);
+    //    //
+    //    //std::cout<<"finished showing image\n";
 
-    }
+    //    //cv::Mat outLeft;
+    //    //cv::Mat outRight;
+    //    //undistort(leftMat, outLeft, cameraMatLeft, distCoefLeft);
+    //    //undistort(rightMat, outRight, cameraMatRight, distCoefRight);
+
+    //    //vecMutex.lock();
+    //    //leftCamera.clearRay();
+    //    //rightCamera.clearRay();
+
+    //    //std::vector<cv::Point> leftPoints = ft.getPoints(outLeft);
+    //    //std::vector<cv::Point> rightPoints = ft.getPoints(outRight);
+    //    ////Draw points on frames
+
+    //    //for (int i=0; i<leftPoints.size(); i++){
+    //    //    cv::circle(outLeft, leftPoints[i], 2, CV_RGB(255, 0, 0));
+    //    //    leftCamera.addRay(leftPoints[i].x, leftPoints[i].y);
+    //    //}
+
+    //    //for (int i=0; i<rightPoints.size(); i++){
+    //    //    cv::circle(outRight, rightPoints[i], 2, CV_RGB(255, 0, 0));
+    //    //    rightCamera.addRay(rightPoints[i].x, rightPoints[i].y);
+    //    //}
+    //    ////std::cout<<leftCamera.numOfRays()<<std::endl;
+    //    ////std::cout<<leftCamera.numOfRays()<<std::endl;
+
+    //    //vecMutex.unlock();
+
+    //    //imshow("left",outLeft);
+    //    //imshow("right", outRight);
+    //    ////cvShowImage("left", leftMat);
+    //    ////cvShowImage("right", rightMat);
+    //    key = cvWaitKey(10);
+    //    if (key == 'q' || key == 0x1B)
+    //        break;
+
+    //}
     //return NULL;
+    std::cout<<"Disconnected\n";
 }
 
 GVector3d gMousePtToSphereVec(int x, int y, int w, int h)
@@ -249,6 +253,8 @@ void display()
 
     leftCamera.draw();
     rightCamera.draw();
+
+    std::cout<<"Drawing "<<leftCamera.numOfRays()<<std::endl;
 
     for ( int i=0; i < leftCamera.numOfRays(); i++)
     {
@@ -410,7 +416,7 @@ void changeSize(int w, int h)
     else
         glOrtho(-100.0 * aspectRatio, 100.0 * aspectRatio, -100.0, 100.0, 100.0, -100.0);
         */
-    gluPerspective(45.0f, aspectRatio, 1.0f, 900.0f);    //using perspective
+    gluPerspective(45.0f, aspectRatio, 1.0f, 2900.0f);    //using perspective
     
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();

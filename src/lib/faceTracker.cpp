@@ -15,7 +15,7 @@ std::vector<cv::Point> FaceTracker::getPoints(cv::Mat img)
     std::vector<cv::Point> res;
     /*Return points in an image*/
     //Parameters
-    bool fcheck = false; double scale = 1; int fpd = -1; bool show = true;
+    bool fcheck = false; double scale = 1; int fpd = -1; bool show = false;
     std::vector<int> wSize1(1); wSize1[0] = 7;
     std::vector<int> wSize2(3); wSize2[0] = 11; wSize2[1] = 9; wSize2[2] = 7;
     int nIter = 5; double clamp=3,fTol=0.01; 

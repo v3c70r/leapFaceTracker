@@ -111,7 +111,7 @@ void Camera::drawRays() const
     glColor3f(0.0, 1.0, 0.0);
     for (int i = 0; i < (int)rays.size(); i++)
     {
-    vec dir = 300*rays[i];
+    vec dir = 500*rays[i];
 
     glPushMatrix();
     glMultMatrixd(transMatrix);
