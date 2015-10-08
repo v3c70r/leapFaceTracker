@@ -1,11 +1,6 @@
 #重要事情说三遍! Notice!
-**DO NOT RUN IT**
 
-**DO NOT RUN IT**
-
-**DO NOT RUN IT**
-
-The memory leak might screw your OS! I just did.
+**There are memory leaks and I'm trying to fix it**
 
 
 #Intro
