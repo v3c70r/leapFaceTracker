@@ -1,7 +1,3 @@
-#重要事情说三遍! Notice!
-
-**There are memory leaks and I'm trying to fix it**
-
 
 #Intro
 LeapFaceTracker is an experiment application to reconstruct faces from leap motion images, [FaceTracker](https://github.com/kylemcdonald/FaceTracker) is used to solve the correspondence problem.
